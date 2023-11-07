@@ -6,7 +6,17 @@
  *
  * @param {array} movements Array de numbers de movimientos bancarios
  */
-function bankStatement(movements) {}
+function bankStatement(movements) {
+
+    const statements = movements.map(function (m) {
+        if (m > 0) {
+            return `Diposit: ${m}`;
+        }
+         return  `Withdraw: ${m}`; 
+    });
+
+    return statements;
+}
 
 // Caso de prueba 1: Array con varios movimientos de entrada y retirada.
 const test1 = [100, -50, 20, -30, 10];

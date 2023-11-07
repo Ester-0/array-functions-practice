@@ -5,8 +5,13 @@
  *
  * @param {array} movements Array de numbers que representa entradas y retiradas de dinero
  */
+// TODO: Implementame
+
 function filterWithdraws(movements) {
-  // TODO: Implementame
+
+  const allNegativeNumbers = movements.filter((m) => m < 0);
+  return (allNegativeNumbers);
+  
 }
 
 // Caso de prueba 1: Array con varios movimientos de entrada y retirada.
